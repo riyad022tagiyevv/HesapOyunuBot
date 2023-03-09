@@ -41,8 +41,8 @@ def yardim(update, context):
     update.message.reply_text('📃Kurallar çok basit, Bot size bir rakam gösterecek ve bu rakamı gruptaki kullanıcılara bir hesaplama şeklinde söylemelisiniz🪁\n\nÖrnek: Bot size 5 sayısını gösterdi ve siz 3+2=? böyle bir sorudan bahsetmelisin🤹‍♂️\n🛑 Bot yalnız gruplar için tasarlanmışdır\n\n' +
                               'Mevcut Komutlar⬇️\n' +
                               '/oyun - Yeni oyun başlatmak🎯\n' +
-                              '/ogretmen - Öğretmen olmak🗣\n' +
-                              '/puan - Grup üzre puanlar📈', reply_to_message_id=True)
+                              '/apar - Müəllim olmak🗣\n' +
+                              '/puan - Qrup üzre puanlar📈', reply_to_message_id=True)
 
 
 def button(update, context):
@@ -68,12 +68,12 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="✅ Botu Grupa Ekle", url="https://t.me/botnamebot?startgroup=a")
-        admin = InlineKeyboardButton(text="Bot Fikri @HusnuEhedov", url="t.me/husnuehedov")
+        addme = InlineKeyboardButton(text="✅ Botu Grupa Ekle", url="https://t.me/N1HesabBot?startgroup=a")
+        admin = InlineKeyboardButton(text="Bot Fikri @RiyadAndMe", url="t.me/RiyadAndMe")
 
         keyboard = [[addme],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('🙋🏻‍♂️🎉 Hesab Oyun Botuna Hoşgeldiniz\n\nBot hakkında ve tüm komutları görmek için\n/yardim komutunu yazmak yeterlidir⚡️', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('🙋🏻‍♂️🎉 Hesab Oyun Botuna Xoşgeldiniz\n\nBot hakkında ve tüm komutları görmek için\n/yardim komutunu yazmak yeterlidir⚡️', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -104,7 +104,7 @@ def set_ogretmen(update, context):
 
     game.set_ogretmen(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("🔍🔢Rakama Bak", callback_data='show_word')
+    show_word_btn = InlineKeyboardButton("🔍🔢Rakama Bax", callback_data='show_word')
     
 
     keyboard = [[show_word_btn]]
@@ -127,7 +127,7 @@ def command_ogretmen(update: Update, context):
                                   reply_to_message_id=True)
         return
 
-    logger.info('Got command /ogretmen,'
+    logger.info('Got command /apar,'
                 'chat_id={},'
                 'user="{}"({}),'
                 'timedelta={}'.format(chat_id,
