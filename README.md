@@ -1,14 +1,3 @@
-İlk Olarak `settings.py` dosyasına `TOKEN` kısmına Bot Token yazınız. Serverde Python (3+) və pip kurulu olması şart
+### 🚀 Deploy to heroku
 
-1
-`git clone https://github.com/sirincay/HesapOyunuBot`
-
-2
-`pip3 install -r requirements.txt`
-
-3
-`python3 main.py`
-
-_[@HusnuEhedov](https://t.me/husnuehedov)_
-
-_[Bu Repodan Yapıldı.](https://github.com/aykhan026/OyunBotTest)_
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/riyad022tagiyevv/HesapOyunuBot)
