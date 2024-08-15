@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-TOKEN = "6205500418:AAFyG_3pVQVIvfYUj4BRM6QmSPyZQ0mqt8k"
+TOKEN = "7440055743:AAF4y99E7V9BRpslyqTYvshF35GK1zOn0NM"
 with open('hüsnü.reqemlist.txt', 'r', encoding='utf-8') as file:
     word_list = file.read().splitlines()
